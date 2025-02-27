@@ -1,0 +1,190 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+    margin: 0;
+    text-decoration: none;
+    list-style-type: none;
+    color: #ffffff;
+    scroll-behavior: smooth;
+}
+
+:root{
+    --primary-color: #ffffff;
+    --background-color: #121212;
+    --accent-color: #00ffff;
+}
+
+body{
+    font-family: 'Dosis', sans-serif;
+    font-weight: 500;
+    background-color: var(--background-color);
+}
+
+h1{
+    font-size: 70px;
+    text-align: center;
+}
+
+table{
+    border: 2px solid #00ffff;
+    margin-left: 90px;
+    float: left;
+    position: relative;
+    margin-bottom: 100px;
+}
+
+th, td{
+    border: 2px solid #00ffff;
+    float: center;
+}
+
+
+
+.logo{
+    position: absolute;
+    padding: 20px;   
+}
+
+.title a{
+    font-size: 80px;
+    justify-content: center;
+    display: flex;
+    position: relative;
+    font-weight: 700;
+    bottom: 30px;
+}
+
+.admin{
+    display: flex;
+    font-weight: 700;
+    justify-content: right;
+    position: relative;
+}
+
+.admin a{
+    padding: 10px 30px;
+    margin: 15px;
+    font-size: 20px;
+    border: 2px solid var(--accent-color);
+}
+
+
+
+.img::before{
+    content: "";
+    background-image: url('../images/about-us.jpg');
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+    opacity: 0.3;
+}
+
+.login {
+    border: 1px solid var(--accent-color);
+    border-radius: 10px;
+    padding: 30px;
+    background: transparent;
+    backdrop-filter: blur(20px);
+    text-align: center;
+    float: right;
+    margin-right: 150px;
+
+}
+
+.login h2{
+    font-size: 2em;
+    color: #ffffff;
+    text-align: center;
+}
+
+.inputbox{ 
+    position: relative;
+    margin: 30px 24px 10px 24px;
+    border-bottom: 2px solid #fff;
+    text-align: center;
+}
+.inputbox label{
+    position: absolute;
+    left: 2%;
+    transform: translateY(-1%);
+    color: #fff;  
+    font-size: 18px;
+    pointer-events: none;
+}
+
+
+.inputbox input{
+    width: 100%;
+    background:transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding: 30px 35px 10px 5px;
+    color: #fff;
+}
+
+.createbutton{
+    padding: 9px 100px;
+    border: 3px solid var(--accent-color);
+    border-radius: 30px;
+    font-size: 20px;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 700;
+    background: transparent;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.createbutton:hover{
+    color: var(--background-color);
+    background-color: var(--accent-color);
+    transition: 0.3s ease-in;
+}
+
+::placeholder{
+    color: #fff;
+}
+
+.error{
+    color: #00ffff;
+    text-align: left;
+    margin-left: 30px;
+    margin-bottom: 0px;
+}
+
+.inputbox input[type="number"]::-webkit-outer-spin-button,
+.inputbox input[type="number"]::-webkit-inner-spin-button{
+ -webkit-appearance: none;
+}
+
+
+.logout{
+    display: flex;
+    font-weight: 700;
+    justify-content: right;
+    position: relative;
+}
+.logout a{
+    font-size: 18px;
+    font-weight: 700;
+    padding: 10px 30px;
+    margin: 15px;
+    border: 3px solid var(--accent-color);
+    border-radius: 25px;
+    float: right;
+   
+    padding: 10px 30px;
+    margin: 15px;
+    font-size: 20px;
+    border: 2px solid var(--accent-color);
+}
+
+.logout a:hover{
+    color: var(--background-color);
+    background-color: var(--accent-color);
+    transition: 0.3s ease-in;
+}
+
+

@@ -1,0 +1,389 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+    margin: 0;
+    text-decoration: none;
+    list-style-type: none;
+    color: #ffffff;
+    scroll-behavior: smooth;
+}
+
+:root{
+    --primary-color: #ffffff;
+    --background-color: #121212;
+    --accent-color: #00ffff;
+}
+
+body{
+    font-family: 'Dosis', sans-serif;
+    font-weight: 500;
+    background-color: var(--background-color);
+}
+
+header{
+    font-size: 20px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin: 0 15px;
+}
+
+section{
+    margin: 5% 6%;
+}
+
+.name{
+    font-size: 18px;
+}
+
+.logout a{
+    font-size: 18px;
+    font-weight: 700;
+    padding: 10px 30px;
+    margin: 15px;
+    border: 3px solid var(--accent-color);
+    border-radius: 25px;
+}
+
+.logout a:hover{
+    color: var(--background-color);
+    background-color: var(--accent-color);
+    transition: 0.3s ease-in;
+}
+
+.wallet{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+
+.wallet-container{
+    position: relative;
+    background-color: #3a3052;
+    width: 69%;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 5px 5px 5px 0px #00cece;
+}
+
+.wallet-info{
+    margin: 10px;
+}
+
+.wallet-info h1{
+    font-size: 35px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 10px 0 0 0;
+}
+
+.wallet-info h4{
+    color: #d4d4d4;
+    font-size: 20px;
+}
+
+.wallet-form form{
+    visibility: hidden;
+    position: absolute;
+}
+
+.wallet-btns{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.wallet-form label{
+    font-size: 20px;
+}
+
+.inputbox{
+    position: relative;
+}
+
+.inputbox input{
+    width: 77%;
+    background:transparent;
+    border: 3px solid white;
+    font-size: 1em;
+    color: #fff;
+    padding: 10px;
+    margin: 10px 0 0 15px;
+    border-radius: 10px;
+    outline: none;
+}
+
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+}
+
+.inputbox button{
+    position: absolute;
+    margin: 10px 0 0 5px;
+    padding: 8px 10px;
+    background-color: #3a3052;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.inputbox button i{
+    font-size: 25px;
+}
+
+.deposit, .withdraw{
+    font-size: 18px;
+    font-family: 'Dosis', sans-serif; 
+    font-weight: 700;
+    padding: 10px 30px;
+    margin: 15px;
+    border: 3px solid var(--accent-color);
+    border-radius: 10px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.popular-crypto{
+    text-align: center;
+}
+
+.popular-crypto h1{
+    font-size: 35px;
+    margin-top: -55px;
+    color: var(--accent-color);
+}
+
+.crypto-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 25px;
+    margin-top: 25px;
+}
+
+.crypto{
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    background-color: white;
+    padding: 10px;
+    font-weight: 700;
+}
+
+.crypto-name h3{
+    color: var(--background-color);
+    font-size: 25px;
+}
+
+.price h4{
+    font-size: 30px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-right: 40px;
+    color: var(--background-color);
+}
+
+.price{
+    margin-right: -20px;
+}
+
+.price p{
+    color: red;
+    font-size: 15px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-right: 40px;
+}
+
+.crypto-wallets h1{
+    font-size: 35px;
+    color: var(--accent-color);
+}
+
+.crypto-wallets p{
+    font-size: 20px;
+    color: red;
+    margin-top: 10px;
+    font-weight: 700;
+}
+
+.cryptowallet-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 10px;
+    margin-top: 10px;
+}
+
+.cryptowallet{
+    padding: 20px;
+    background-color: #3a3052;
+    border-radius: 10px;
+}
+
+.cryptowallet-name{
+    display: flex;
+    align-items: center;
+}
+
+.cryptowallet-name h2{
+    font-size: 25px;
+    margin-left: 10px;
+}
+
+.crypto-short h2{
+    color:#d4d4d4;
+}
+
+.wallet-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.wallet-body h1{
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 10px 0 0 0;
+}
+
+.wallet-body h4{
+    color: #d4d4d4;
+}
+
+.crypto-btns{
+    display: flex;
+}
+
+.buy, .sell{
+    font-size: 18px;
+    font-family: 'Dosis', sans-serif; 
+    font-weight: 700;
+    padding: 10px 20px;
+    margin: 30px 10px 10px 10px;
+    border: 3px solid var(--accent-color);
+    border-radius: 10px;
+    background-color: transparent;
+    cursor: pointer;
+
+}
+
+.wallet-error p{
+    margin-left: 100px;
+    font-size: 20px;
+    color: red;
+    font-weight: 700;
+}
+
+.crypto-form form{
+    visibility: hidden; 
+    position: absolute;   
+}
+
+.payment-methods{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 30px;
+}
+
+.payments h1{
+    font-size: 35px;
+    color: var(--accent-color);
+}
+
+.payments h6{
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.payment-container{
+    display: flex;
+    margin-top: 20px;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 20px;
+    align-items: center;
+}
+
+.payment-text{
+    margin-left: 30px;
+}
+
+.payment-container i{
+    font-size: 30px;
+    margin-left: 15px;
+}
+
+.payment-container button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+
+.payments-form h1{
+    text-align: center;
+    color: var(--primary-color);
+    font-size: 30px;
+}
+
+.bank-form{
+    display: none;
+    margin-left: 10px;  
+    padding: 30px;
+    border-radius: 15px;
+    background-color: #3a3052;
+}
+
+.bankinput{
+    position: relative;
+    margin: 30px 24px 10px 24px;
+    border-bottom: 2px solid var(--primary-color);
+    text-align: center;
+}
+
+.bankinput label{
+    position: absolute;
+    transform: translateY(-1%);
+    color: var(--primary-color);
+    font-size: 18px;
+    pointer-events: none;
+}
+
+.bankinput input{
+    width: 100%;
+    background:transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding: 30px 35px 10px 5px;
+    color: var(--primary-color);
+}
+
+.bank-form button{
+    width: 100%;
+    padding: 10px;
+    border: 3px solid var(--accent-color);
+    border-radius: 30px;
+    font-size: 20px;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 700;
+    background: transparent;
+    margin-top: 30px;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+::placeholder{
+    color: #d4d4d4;
+}
+
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+}
+
+.payments-error p{
+    color: red;
+    margin-top: 10px;
+    font-size: 20px;
+}

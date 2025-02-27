@@ -1,0 +1,350 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+    margin: 0;
+    text-decoration: none;
+    list-style-type: none;
+    color: #ffffff;
+    scroll-behavior: smooth;
+}
+
+:root{
+    --primary-color: #ffffff;
+    --background-color: #121212;
+    --accent-color: #00ffff;
+}
+
+body{
+    font-family: 'Dosis', sans-serif;
+    font-weight: 500;
+    background-color: var(--background-color);
+}
+
+header{
+    font-size: 20px;
+}
+
+section{
+    margin: 5% 6%;
+}
+
+.image{
+    background-image: url("../images/background.jpeg"); 
+    background-position: center;   
+    background-size: cover;
+    height: 100vh;
+    opacity: 0.3;
+}
+
+.title{
+    position: absolute;
+    top: 30%;
+    margin-left: 6%;
+}
+
+.title h1{
+    font-size: 60px;
+}
+
+.title p{
+    font-size: 20px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.title-button{
+    padding: 10px 30px;
+    margin: 50px 0 0 0;
+    border: 3px solid var(--accent-color);
+    border-radius: 25px;
+    font-weight: 700;
+}
+
+.title-button:hover{
+    color: var(--background-color);
+    background-color: var(--accent-color);
+    transition: 0.3s ease-in;   
+}
+
+.navbar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin: 0 15px;
+}
+
+.logo{
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.nav-list{
+    display: flex;
+    margin-right: 50px;
+}
+
+.nav-list a{
+    margin: 0 25px ;
+}
+
+.nav-list a:hover{
+    color: var(--accent-color);
+    transition: 0.5s ease-in;
+}
+
+.buttons{
+    display: flex;
+    font-weight: 700;
+}
+
+.button a{
+    padding: 10px 30px;
+    margin: 15px;
+    border: 3px solid var(--accent-color);
+    border-radius: 25px;
+}
+
+.button a:hover{
+    color: var(--background-color);
+    background-color: var(--accent-color);
+    transition: 0.3s ease-in;
+}
+
+.box-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+    grid-gap: 20px;
+}
+
+.box{
+    background-color: var(--primary-color);
+    padding: 20px 30px 35px;
+    border-radius: 6px;
+    box-shadow: 5px 5px 5px 0px #00cece;
+}
+
+.box h4{
+    color: var(--background-color);
+    font-size: 20px;
+    font-weight: 700;
+    margin: 10px 0 0;
+}
+
+.box p{
+    color: var(--background-color);
+    font-size: 17px;
+    font-weight: 500;
+    margin: 25px 0 10px 0;
+}
+
+.bank{
+    display: flex;
+}
+
+.bank-info{
+    margin: -10px 0 0 70px;
+}
+
+.bank-info h2{
+    color: var(--accent-color);
+    font-size: 38px;
+}
+
+.bank-info p{
+    font-size: 20px;
+    margin: 20px 0 20px 5px;
+}
+
+li::marker{
+    color: var(--accent-color);
+    font-size: 20px;
+}
+
+.about-us{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+
+.about-info{
+    margin: 0 50px 20px 0;
+}
+
+.about-info h2{
+    color: var(--accent-color);
+    font-size: 38px;
+}
+
+.about-info p{
+    font-size: 20px;
+    margin: 20px 0 20px 5px;
+}
+
+.about-img img{
+    width: 100%;
+}
+
+.services h2{
+    color: var(--accent-color);
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.services-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 15px;
+    grid-template-rows: repeat(2, 1fr);
+    grid-row-gap: 15px;
+}
+
+.services-box{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    color: var(--background-color);
+    background-color: var(--primary-color);
+    padding: 25px;
+    border-radius: 6px;
+    text-align: center;
+    align-items: center;
+}
+
+.services-box img{
+    margin-left: 40px;
+}
+
+.service-text{
+    display: block;
+    width: 100%;
+}
+
+.service-text h4{
+    color: var(--background-color);
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.service-text p{
+    color: var(--background-color);
+    font-size: 17px;
+}
+
+
+.account h2{
+    color: var(--accent-color);
+    font-size: 38px;
+}
+
+.account h4{
+    text-align: center;
+    font-size: 25px;
+    margin: 30px 0;
+}
+
+.account-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+}
+
+.account-steps{
+    border-right: 1px solid var(--primary-color);
+}
+
+.account-text h6{
+    font-size: 25px;
+}
+
+.account-text p{
+    margin: 0 20px 20px 20px;
+}
+
+.partnerships h2{
+    font-size: 38px;
+    color: var(--accent-color);
+}
+
+.brand-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 10px;
+    align-items: center;
+    text-align: center;
+}
+
+.brand{
+    border-radius: 6px;
+    padding: 20px;
+    opacity: 0.6;
+}
+
+.brand:hover{
+    opacity: 1;
+}
+
+footer{
+    background-color: #1f1f1f;
+
+}
+
+.footer-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 6%;
+
+}
+
+footer h4{
+    font-size: 25px;
+    text-decoration: underline var(--accent-color);
+    margin: 50px 0 0 0;
+}
+
+footer a, footer p{
+    display: flex;
+    margin: 20px 10px;
+    color: #727272;
+    font-size: 18px;
+    cursor: pointer;
+
+}
+
+footer a:hover, footer p:hover{
+    color: var(--primary-color);
+    margin: 20px 10px 20px 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.socials{
+    display: flex;
+}
+
+.socials a{
+    font-size: 22px;
+}
+
+.socials a:hover{
+    margin: 20px 10px;
+    transform: scale(1.5);
+}
+
+.politics{
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 6% 0 6%;
+}
+
+.politics-links{
+    display: flex;
+}
+
+.politics-links a:hover{
+    margin: 20px 10px;
+}
