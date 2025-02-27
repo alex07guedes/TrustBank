@@ -1,24 +1,26 @@
-TrustBank - Online Banking System
+# TrustBank - Online Crypto Banking System
 
-📌 Description
+## 📌 Description
 
-    TrustBank is an online banking system developed for the DEAPC project. 
-    This system allows users to manage their accounts, execute transactions, and check payment details in a secure environment. 
+    TrustBank is an online crypto banking system developed for the DEAPC project. 
+    Allows users to manage their accounts, execute transactions, buy and sell cryptocurrencies, and check payment details.
     It also provides an admin dashboard for managing users and transactions.
 
-⚙️ Functionality
+## ⚙️ Functionality
 
     ✅ User Account Management: Users can register, log in, and manage their profiles.
 
     💰 Transactions & Payments: Users can transfer money between accounts and check transaction history.
-
+    
     📊 Balance Inquiry: Users can check their current account balance at any time.
+
+    🔄 Buy & Sell Cryptocurrencies: Users can trade cryptocurrencies securely.
 
     🔐 Admin Dashboard: Administrators can manage user accounts and oversee transactions.
 
-    🗃️ Database Integration: MySQL is used to store user and transaction data.
+    🗃️ Database Integration: MySQL is used to store user, transaction, and cryptocurrency trading data.
 
-🛠️ Technologies Used
+## 🛠️ Technologies Used
 
     XAMPP: Local server environment.
 
@@ -26,19 +28,19 @@ TrustBank - Online Banking System
 
     HTML, CSS & JavaScript: Frontend design and user interaction.
 
-👥 User Types
+## 👥 User Types
 
-    Administrator: Manages users and transactions.
+    Administrator: Manages users, transactions, and crypto trading operations.
 
-    User: Can check balances, perform transactions, and manage accounts.
+    User: Can check balances, perform transactions, trade cryptocurrencies, and manage accounts.
 
-🏗️ System Components
+## 🏗️ System Components
 
     🔹 Database
 
-        Stores user and transaction data.
+        Stores user, transaction, and cryptocurrency trading data.
 
-        Main tables: users, transactions, accounts.
+        Main tables: users, transactions, accounts, crypto_trades.
 
     🔹 Index Page
 
@@ -54,7 +56,7 @@ TrustBank - Online Banking System
 
     🔹 Admin Panel
 
-        Admins can oversee user transactions and manage accounts.
+        Admins can oversee user transactions, cryptocurrency trades, and manage accounts.
 
     🔹 User Dashboard
 
@@ -63,5 +65,9 @@ TrustBank - Online Banking System
             View their balance.
 
             Check transaction history.
-
+    
             Execute payments and transfers.
+
+            Buy and sell cryptocurrencies.
+
+    🔹 Developed as part of the DEAPC project.
