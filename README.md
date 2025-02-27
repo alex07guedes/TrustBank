@@ -1,73 +1,67 @@
-DEAPC Project - Online Banking
+TrustBank - Online Banking System
 
-Application Objectives:
+📌 Description
 
-  Manage customer accounts;
+    TrustBank is an online banking system developed for the DEAPC project. 
+    This system allows users to manage their accounts, execute transactions, and check payment details in a secure environment. 
+    It also provides an admin dashboard for managing users and transactions.
 
-  Manage/analyze/verify transactions;
+⚙️ Functionality
 
-  Check payment information.
+    ✅ User Account Management: Users can register, log in, and manage their profiles.
 
-Technologies Used:
+    💰 Transactions & Payments: Users can transfer money between accounts and check transaction history.
 
-  XAMPP: For local server environment.
+    📊 Balance Inquiry: Users can check their current account balance at any time.
 
-  PHP & MySQL: Backend development and database management.
+    🔐 Admin Dashboard: Administrators can manage user accounts and oversee transactions.
 
-  HTML, CSS & JavaScript: Frontend design and user interaction.
+    🗃️ Database Integration: MySQL is used to store user and transaction data.
 
-User Types:
+🛠️ Technologies Used
 
-  Administrator;
+    XAMPP: Local server environment.
 
-  User.
+    PHP & MySQL: Backend development and database management.
 
-Available Features for Users:
+    HTML, CSS & JavaScript: Frontend design and user interaction.
 
-  View account details;
+👥 User Types
 
-  View transactions between accounts;
+    Administrator: Manages users and transactions.
 
-  Execute payments;
+    User: Can check balances, perform transactions, and manage accounts.
 
-  Check available account balance.
+🏗️ System Components
 
-System Components:
+    🔹 Database
 
-  Database
+        Stores user and transaction data.
 
-  The system uses MySQL to store user and transaction data.
+        Main tables: users, transactions, accounts.
 
-  Tables include users, transactions, and accounts.
+    🔹 Index Page
 
-  Index Page
+        Landing page with navigation to login and signup.
 
-  The main landing page where users can navigate to login or sign up.
+    🔹 Login Page
 
-Login Page
+        Users and administrators can log in with their credentials.
 
-  Users can log in using their credentials.
+    🔹 Signup Page
 
-  Administrators have separate access.
+        New users can register and create an account.
 
-Signup Page
+    🔹 Admin Panel
 
-  New users can create an account.
+        Admins can oversee user transactions and manage accounts.
 
-  Account details are stored in the database.
+    🔹 User Dashboard
 
-Admin Login & Admin Page
+        Users can:
 
-  Administrators have a dedicated login.
+            View their balance.
 
-  The admin page allows management of users and transactions.
+            Check transaction history.
 
-User Dashboard
-
-Allows users to:
-
-  View account balance.
-
-  Check past transactions.
-
-  Execute new transactions.
+            Execute payments and transfers.
